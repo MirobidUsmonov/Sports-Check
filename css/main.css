@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.visually_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.site__label {
+    width: 200px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+.site__label-disablad {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.checkbox__bedge-1,
+.checkbox__bedge-2,
+.checkbox__bedge-3,
+.checkbox__bedge-4 {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.site__input:checked + .checkbox__bedge-1 {
+    background-image: url("../img/table-tennis.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.site__input:checked + .checkbox__bedge-2 {
+    background-image: url("../img/basketball-ball.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.site__input:checked + .checkbox__bedge-3 {
+    background-image: url("../img/volleyball-ball.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.site__input:disabled + .checkbox__bedge-4 {
+    background-image: url("../img/hockey-puck.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.2;
+}
+
+.button {
+    width: 200px;
+    padding: 10px;
+    background-color: blueviolet;
+    border: 2px dashed firebrick;
+    border-radius: 5px;
+}
+
+.button:active {
+    border: 2px solid firebrick;
+    box-shadow: 5px 8px 10px black;
+}
